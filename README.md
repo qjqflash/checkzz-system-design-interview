@@ -2,38 +2,12 @@
 
 > How to prepare system design questions for an IT company
 
-System design is a very broad topic. Even a software engineer with many years of working experience at a top IT company may not be an expert on system design. If you want to become an expert, you need to read many books, articles, and solve real large scale system design problems.
-
-This repository only teaches you how to handle the system design interview with a systematic approach in a short time. You can dive into each topic if you have time. Of course, welcome to add your thoughts!
-
 ## <a name='toc'>Table of Contents</a>
-- [ ] [System Design Interview Tips](#tips)
 - [ ] [Basic Knowledge about System Design](#intro)
 - [ ] [Company Engineering Blogs](#blog)
 - [ ] [Products and Systems](#system)
 - [ ] [Hot Questions and Reference](#qs)
-- [ ] [Good Books](#bk)
 - [ ] [Object Oriented Design](#ood)
-
-### [[⬆]](#toc) <a name='tips'>System Design Interview Tips:</a>
-
-**Clarify the constraints and identify the user cases**
-
-Spend a few minutes questioning the interviewer and agreeing on the scope of the system.
-Remember to make sure you know all the requirements the interviewer didn't tell you about in the beginning.
-
-User cases indicate the main functions of the system, and constraints list the scale of the system such as requests 
-per second, requests types, data written per second, data read per second.
-
-**High-level architecture design**
-
-Sketch the important components and the connections between them, but don't go into some details. 
-Usually, a scalable system includes webserver (load balancer), service (service partition), database (primary/secondary database cluster plug cache).
- 
-**Component design**
-
-For each component, you need to write the specific APIs for each component. You may need to finish
-the detailed OOD design for a particular function. You may also need to design the database schema for the database.
 
 ### [[⬆]](#toc) <a name='intro'>Basic Knowledge about System Design:</a>
 
@@ -72,17 +46,10 @@ If you are going to have an onsite with a company, you should read their enginee
 * [Etsy Code as Craft](http://codeascraft.com/)
 * [Foursquare Engineering Blog](http://engineering.foursquare.com/)
 * [Airbnb Engineering](http://nerds.airbnb.com/)
-* [WebEngage Engineering Blog](http://engineering.webengage.com/)
-* [LinkedIn Engineering](http://engineering.linkedin.com/blog)
-* [The Netflix Tech Blog](http://techblog.netflix.com/)
-* [BankSimple Simple Blog](https://www.simple.com/engineering/)
 * [Square The Corner](http://corner.squareup.com/)
 * [SoundCloud Backstage Blog](https://developers.soundcloud.com/blog/)
-* [Flickr Code](http://code.flickr.net/)
 * [Instagram Engineering](http://instagram-engineering.tumblr.com/)
 * [Dropbox Tech Blog](https://tech.dropbox.com/)
-* [Cloudera Developer Blog](http://blog.cloudera.com/)
-* [Bandcamp Tech](http://bandcamptech.wordpress.com/)
 * [Oyster Tech Blog](http://tech.oyster.com/)
 * [THE REDDIT BLOG](http://www.redditblog.com/)
 * [Groupon Engineering Blog](https://engineering.groupon.com/)
@@ -230,37 +197,6 @@ Reference:
 Reference:   
 * [Introduction to Memcached](http://www.slideshare.net/oemebamo/introduction-to-memcached)
 
-### [[⬆]](#toc) <a name='bk'>Good Books:</a>
-
-* [Big Data: Principles and best practices of scalable realtime data systems](http://www.amazon.com/Big-Data-Principles-practices-scalable/dp/1617290343)
-* [Real-Time Analytics: Techniques to Analyze and Visualize Streaming Data](http://www.amazon.com/Real-Time-Analytics-Techniques-Visualize-Streaming/dp/1118837916)
-* [Building Microservices: Designing Fine-Grained Systems](http://www.amazon.com/Building-Microservices-Sam-Newman/dp/1491950358)
-* [Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321)
-
-### [[⬆]](#toc) <a name='ood'>Object Oriented Design:</a>
-
-#### Tips for OOD Interview
-
-**Clarify the scenario, write out user cases**
-
-Use case is a description of sequences of events that, taken together, lead to a system doing something useful. Who is going to use it and how they are going to use it. The system may be very simple or very complicated.
-
-Special system requirements such as multi-threading, read or write oriented.
-
-**Define objects**
-
-Map identity to class: one scenario for one class, each core object in this scenario for one class.
-
-Consider the relationships among classes: certain class must have unique instance, one object has many other objects (composition), one object is another object (inheritance).
-
-Identify attributes for each class: change noun to variable and action to methods.
-
-Use design patterns such that it can be reused in multiple applications.
-
 #### Useful Websites
 
 * [101 Design Patterns & Tips for Developers](http://sourcemaking.com/design-patterns-and-tips)
-
-
-
-
